@@ -39,3 +39,11 @@ resource "azurerm_virtual_network" "vnet" {
   location            = "eastus"
   resource_group_name = azurerm_resource_group.rg1.name
 }
+
+# Store state in Terraform Cloud
+cloud {
+    organization = "Wrangham1"
+    workspaces {
+      name = "intro-terraform"
+    }
+  }
