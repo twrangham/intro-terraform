@@ -17,10 +17,6 @@ terraform {
   required_version = ">= 1.1.0"
 }
 
-provider "azurerm" {
-  features {}
-}
-
 # Create vnet1
 resource "azurerm_virtual_network" "vnet1" {
   name                = "myTFVnet1"
