@@ -1,14 +1,3 @@
-# Configure the Azure provider!!!
-terraform {
-  required_providers {
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "~> 3.0.2"
-    }
-  }
-  required_version = ">= 1.1.0"
-}
-
 # Create vnet1
 resource "azurerm_virtual_network" "vnet1" {
   name                = "myTFVnet1"
