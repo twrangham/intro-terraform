@@ -39,6 +39,15 @@ resource "azurerm_resource_group" "rg2" {
   }
 }
 
+resource "azurerm_resource_group" "rg3" {
+  name     = var.resource_group_name3
+  location = "eastus"
+  tags = {
+    CreatedBy = "Travis"
+    Env       = "Prod"
+  }
+}
+
 # Create a virtual network
 resource "azurerm_virtual_network" "vnet" {
   name                = "myTFVnet"

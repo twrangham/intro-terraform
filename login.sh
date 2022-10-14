@@ -1,0 +1,1 @@
+az ad sp create-for-rbac --name sp-terraform-auto --role Contributor --scopes /subscriptions/c9dd0418-f54d-4ac0-b81b-2c725867e1f5
