@@ -6,14 +6,6 @@ terraform {
       version = "~> 3.0.2"
     }
   }
-  # Store state in Terraform Cloud
-  cloud {
-    organization = "Wrangham1"
-    workspaces {
-      name = "intro-terraform"
-    }
-  }
-
   required_version = ">= 1.1.0"
 }
 
